@@ -7,9 +7,24 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <%= render 'header' %>
-    <%= yield %>
-    <%= render 'sidebar' %>
-    <%= render 'footer' %>
+    <header class='container header'>
+      <%= render 'header' %>
+    </header>
+    <div class='grid'>
+      <div class='container main col-2-3'>
+        <div class='jumbotron'>
+          <%= yield %>
+        </div>
+      </div>
+      <div class='container sidebar col-1-3'>
+        <div class='jumbotron'>
+          <%= render 'sidebar' %>
+        </div>
+      <div class='push'></div>
+      </div>
+      <div class='footer'>
+        <%= render 'footer' %>
+      </div>
+    </div>
   </body>
 </html>
