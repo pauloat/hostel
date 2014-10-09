@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get 'things'  => 'static_pages#things'
   get 'gallery' => 'static_pages#gallery'
   get 'about'   => 'static_pages#about'
-  get 'contact' => 'static_pages#contact'
+  resources :contacts, only: [:new, :create]
 
 end
