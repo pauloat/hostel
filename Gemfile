@@ -19,6 +19,7 @@ gem 'sdoc',                     '0.4.0', group: :doc
 gem 'therubyracer',  platforms: :ruby
 gem 'activerecord-tableless'
 gem 'simple_form'
+gem 'figaro'
 
 group :test do
   gem 'minitest-reporters', '1.0.5'
